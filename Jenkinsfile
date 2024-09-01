@@ -43,7 +43,7 @@ pipeline {
                 echo "Tggle: ${params.TOGGLE}"
                 echo "Password: ${params.PASSWORD}"
                 echo "trigging test"
-                error 'some failure'
+                //error 'some failure' //to check failure
             }
         }
     }
