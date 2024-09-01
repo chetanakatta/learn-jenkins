@@ -4,7 +4,7 @@ pipeline {
     }
     options {
         //after particular time job will be failed (timeout counter starts before agent is allocated)
-        timeout (time: 1, unit: 'SECONDS')
+        timeout (time: 30, unit: 'MINUTES')
     }
     stages {
         stage ('Build') {
