@@ -23,7 +23,7 @@ pipeline {
         stage ('Test') {
             steps {
                 sh 'echo this is test'
-                sh 'sleep 10'
+                //sh 'sleep 10'
             }
         }
         stage ('deploy') {
@@ -37,6 +37,7 @@ pipeline {
                 echo "biography: ${params.BIOGRAPHY}"
                 echo "Tggle: ${params.TOGGLE}"
                 echo "Password: ${params.PASSWORD}"
+                echo "trigged test"
             }
         }
     }
